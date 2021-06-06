@@ -1,0 +1,95 @@
+#interest,
+#academic {
+  background-color: whitesmoke;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#interest .container {
+  opacity: 0;
+}
+
+#interest .things {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.things .thing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 2%;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  margin: 0px 20px 20px;
+  border-radius: 100%;
+  background-image: radial-gradient(#16ff00, #03ea43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+}
+.circle:hover {
+  transform: rotate(360deg);
+}
+
+.thing .heading {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px 20px 20px;
+  cursor: default;
+  transition: all 0.5s;
+}
+.thing .heading:hover {
+  font-size: 22px;
+  text-decoration: underline;
+  color: green;
+}
+.thing p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.thing p strong {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: green;
+}
+.thing p strong.lang {
+  color: red;
+}
+
+@media (max-width: 828px) {
+  .thing p {
+    font-size: 13px;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 576px) and (max-width: 670px) {
+  .thing .heading {
+    margin-left: 0px;
+  }
+  .thing .content {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #interest {
+    padding: 50px 0px;
+  }
+  .things .thing {
+    margin: 20px;
+    padding: 0px;
+  }
+  .thing p {
+    margin: 0;
+  }
+}

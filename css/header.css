@@ -1,0 +1,143 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../Images/img3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .heading {
+  font-size: 60px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  animation: title 3s ease-in-out 1;
+}
+@keyframes title {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+.line {
+  width: 30%;
+  height: 33px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid #c2c1c1;
+  display: flex;
+  justify-content: center;
+}
+.line img {
+  height: 52px;
+}
+header div {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+header ul {
+  padding: 0px;
+}
+header li {
+  list-style: none;
+  padding: 0px;
+}
+@media (max-width: 620px) {
+  header {
+    letter-spacing: 1px;
+  }
+  header .heading {
+    font-size: 50px;
+  }
+  header div {
+    font-size: 20px;
+  }
+  @keyframes title {
+    from {
+      font-size: 0px;
+    }
+    to {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 434px) {
+  header .heading {
+    font-size: 30px;
+  }
+  header div {
+    font-size: 15px;
+  }
+  @keyframes title {
+    from {
+      font-size: 0px;
+    }
+    to {
+      font-size: 30px;
+    }
+  }
+}
+.load4 {
+  margin: 20px;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -100px;
+  opacity: 1 !important;
+}
+.arrow {
+  width: 30px;
+  height: 10px;
+  margin: 2px;
+
+  display: flex;
+  align-items: center;
+}
+.arrl {
+  width: 50%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform-origin: bottom right;
+  transform: rotate(30deg);
+}
+.arrr {
+  width: 50%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform-origin: bottom left;
+  transform: rotate(-30deg);
+}
+.ani {
+  animation: arr 2s linear 1;
+}
+@keyframes arr {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  30% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  80% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

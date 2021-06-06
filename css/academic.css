@@ -1,0 +1,228 @@
+#academic {
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#academic .container {
+  opacity: 0;
+}
+
+#academic .detail {
+  width: 100%;
+}
+
+#academic ul {
+  margin: 20px auto 0px;
+  padding: 0px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+}
+#conclusion {
+  grid-column-start: span 3;
+  padding: 30px 20px;
+  margin: 0px;
+  background-color: white;
+  text-align: center;
+}
+#academic .title,
+#academic .class {
+  color: green;
+  font-weight: 400;
+}
+#academic .result {
+  color: red;
+  font-weight: 400;
+}
+#academic ul li {
+  font-weight: 300;
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#academic ul li:last-child {
+  margin-bottom: 40px;
+}
+.img {
+  display: flex;
+  align-items: center;
+}
+.border-top-grey-5 {
+  border-top: 5px solid grey;
+}
+.img::after {
+  content: "";
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border-left: 5px solid grey;
+  transform: translateX(-380%);
+}
+.img > .round {
+  width: 100%;
+  border-radius: 100%;
+  background-color: white;
+  z-index: 1;
+}
+.img img {
+  width: 100%;
+  filter: invert(50%);
+  z-index: 2;
+}
+#academic ul li:nth-child(2n + 1) {
+  align-items: flex-end;
+  text-align: right;
+}
+#academic ul li:nth-child(2n) {
+  align-items: flex-start;
+  text-align: left;
+}
+.extra {
+  color: gray;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  background-color: ghostwhite;
+}
+.extra:nth-child(2n + 1) {
+  text-align: left;
+}
+.extra:nth-child(2n) {
+  text-align: right;
+}
+.extra strong {
+  font-weight: 400;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+#cv {
+  margin-top: 8%;
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../Images/cv-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cv > span {
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+}
+#cv button {
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  font-size: 16px;
+}
+#cv button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.technologies {
+  padding: 80px 20px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.technologies .head {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.technologies div {
+  margin-top: 20px;
+}
+.technologies .tech {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+.tech img {
+  height: 100px;
+  padding: 0px 20px;
+  margin: 20px 0px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+.tech img:nth-child(2n) {
+  animation: greyChange 3s infinite ease-in-out;
+}
+.tech img:nth-child(2n + 1) {
+  animation: greyChange 6s infinite ease-in-out;
+}
+@keyframes greyChange {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
+
+@media (max-width: 576px) {
+  #academic ul {
+    font-size: 16px;
+  }
+  #academic ul li,
+  #academic ul .extra {
+    margin: 10px;
+    padding: 10px;
+  }
+  #cv button {
+    font-size: 13px;
+  }
+  #cv > span {
+    font-size: 40px;
+  }
+  .tech img:nth-child(5) {
+    width: 100%;
+  }
+}
+@media (max-width: 468px) {
+  #academic ul {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  #academic ul .img {
+    display: none;
+  }
+  #conclusion {
+    grid-column-start: span 2;
+    border: none;
+  }
+}

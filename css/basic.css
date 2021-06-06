@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: yellow;
+}
+#about,
+#interest,
+#academic,
+#project {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  padding: 30px 10px;
+  background: white;
+  transition: all 2s;
+}

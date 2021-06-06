@@ -1,0 +1,128 @@
+#about {
+  opacity: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  transition: all 2s;
+}
+.container > span,
+.proclamation span {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 30px 0px;
+  margin: 0px 20px 20px;
+}
+#about a {
+  text-decoration: none;
+  color: green;
+}
+#about a:hover {
+  text-decoration: underline;
+}
+#about p {
+  line-height: 150%;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.proclamation {
+  width: 50%;
+  padding: 2% 5%;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#about .title {
+  padding-top: 0px;
+  font-size: 30px;
+  animation: none;
+  color: black;
+  margin: 0px;
+}
+
+#about .proclamation span {
+  margin: 0px;
+  padding: 0px;
+  font-size: 26px;
+}
+
+#items {
+  margin: 20px 20px 0;
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+#items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item i {
+  font-size: 40px;
+  margin: 0px 20px 20px;
+  color: gray;
+}
+.item:nth-child(n + 2) i {
+  font-size: 30px;
+  margin: 0px 20px 30px;
+}
+#items .item span {
+  font-size: 1em;
+}
+#about .auth {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  margin-bottom: 60px;
+}
+@media (max-width: 968px) {
+  .proclamation {
+    padding: 2% 1%;
+  }
+  #items {
+    margin: 20px 0px 0px;
+  }
+}
+@media (max-width: 768px) {
+  #about .proclamation span {
+    font-size: 20px;
+  }
+  #items .item span {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 576px) {
+  #about p {
+    text-align: justify;
+    font-size: 0.85em;
+  }
+}
+@media (max-width: 460px) {
+  #items {
+    flex-direction: column;
+  }
+  .item {
+    margin-top: 10px;
+  }
+  #about p {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  #about .proclamation span {
+    font-size: 15px;
+  }
+  #items {
+    flex-direction: column;
+  }
+  .item {
+    margin-top: 10px;
+  }
+}
