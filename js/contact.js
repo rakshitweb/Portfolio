@@ -1,6 +1,6 @@
 let shownContact = false;
 window.addEventListener("scroll", () => {
-  let navAbout = document.querySelectorAll("nav div span")[3];
+  let navAbout = document.querySelectorAll("nav div span")[4];
   let element = document.querySelector("#project .container");
   let position = element.getBoundingClientRect();
   // console.log(
