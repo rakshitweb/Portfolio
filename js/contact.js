@@ -3,12 +3,12 @@ window.addEventListener("scroll", () => {
   let navAbout = document.querySelectorAll("nav div span")[4];
   let element = document.querySelector("#contact");
   let position = element.getBoundingClientRect();
-  console.log(
-    window.scrollY,
-    window.innerHeight,
-    position.top,
-    position.bottom
-  );
+//   console.log(
+//     window.scrollY,
+//     window.innerHeight,
+//     position.top,
+//     position.bottom
+//   );
   // if (
   //   2 * position.top < window.innerHeight &&
   //   position.bottom >= 0 &&
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
   //   shownContact = true;
   // }
   if (position.top <= 145) {
-    console.log(navAbout);
+//     console.log(navAbout);
     navAbout.classList.add("activeClass");
   } else {
     navAbout.classList.remove("activeClass");
