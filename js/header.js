@@ -42,7 +42,7 @@ let animate = async () => {
     break;
   }
 };
-animate();
+// animate();
 let count = 0;
 let left = document.querySelectorAll(".arrow .arrl");
 let right = document.querySelectorAll(".arrow .arrr");
@@ -79,4 +79,9 @@ let arrowAnimation = () => {
 let counter = () => {
   setTimeout(arrowAnimation, 500);
 };
-counter();
+// counter();
+
+const onLoadBody = () => {
+  counter();
+  animate();
+};
